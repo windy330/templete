@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <script src="./node_modules/seajs/dist/sea-debug.js"></script>
+    <script>
+        // seajs.use('./js/main');
+        seajs.config({
+            base:'./js',
+            alias:{
+                jquery:'jquery.min.js'
+            }
+        });
+        seajs.use('main.min')
+    </script>
+</body>
+</html>
